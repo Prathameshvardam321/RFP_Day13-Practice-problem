@@ -8,7 +8,7 @@ public class TestNumber<T> {
               max=intArray[i];
           }else {
               max=intArray[i+1];
-          }
+           }
        }
        return max;
     }
