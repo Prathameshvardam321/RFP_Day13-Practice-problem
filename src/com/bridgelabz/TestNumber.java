@@ -1,5 +1,4 @@
 package com.bridgelabz;
-
 public class TestNumber<T> {
     static String toFindMaximum(String[] intArray){
         String max =intArray[0];
