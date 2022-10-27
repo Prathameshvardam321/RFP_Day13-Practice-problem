@@ -1,20 +1,18 @@
 package com.bridgelabz;
 
 public class TestNumber<T> {
-   static Integer toFindMaximum(Integer[] intArray){
-       Integer max =0;
+   static Float toFindMaximum(Float[] intArray){
+       Float max =0.0f;
        for (int i=0;i<intArray.length-1;i++){
-          if (intArray[i].compareTo(intArray[i+1])==1){
+          if (intArray[i].compareTo(intArray[i+1])==1&&intArray[i]>max){
               max=intArray[i];
-          }else {
-              max=intArray[i+1];
           }
        }
        return max;
     }
     public static void main(String[] args) {
-        Integer[] intArray = {12,13,45};
-       int result = toFindMaximum(intArray);
+        Float[] intArray = {121.1f,13.21f,45.12f};
+       float result = toFindMaximum(intArray);
         System.out.println(result);
     }
 }
